@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voidstrike — Survive the Void</title>
+  <meta name="description" content="Voidstrike is a fast-paced sci-fi space shooter for mobile. Pilot your ship through alien fleets, unlock powerful skills, and face titanic bosses across the galaxy." />
+  <meta property="og:title" content="Voidstrike — Survive the Void" />
+  <meta property="og:description" content="Fast-paced mobile space shooter. Pilot, level up, conquer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="canonical" href="https://chefnicofrei-eng.github.io/voidstrike-landing/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Stars canvas background -->
+  <canvas id="stars"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">VOIDSTRIKE</span>
+      <a href="#download" class="btn btn-sm">Download Free</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+
+    <div class="hero-planets">
+      <img src="assets/planet_01.png" class="planet p1" alt="" />
+      <img src="assets/planet_02.png" class="planet p2" alt="" />
+      <img src="assets/planet_03.png" class="planet p3" alt="" />
+    </div>
+
+    <div class="hero-bosses">
+      <img src="assets/boss_03_f0.png" class="boss b1" alt="" />
+      <img src="assets/boss_01_f0.png" class="boss b2" alt="" />
+      <img src="assets/boss_02_f0.png" class="boss b3" alt="" />
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Mobile Space Shooter</p>
+      <h1 class="hero-title">VOID<span class="accent">STRIKE</span></h1>
+      <p class="hero-subtitle">Pilot your fighter through alien armadas.<br/>Master your skills. Survive the void.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm-1 11.586L5.707 10.29l1.414-1.414L9 10.757V6h2v4.757l1.879-1.879 1.414 1.414L10 13.586z"/></svg>
+          Download Free
+        </a>
+        <a href="#features" class="btn btn-ghost">See Features</a>
+      </div>
+      <p class="hero-note">Free to play · iOS · No account needed</p>
+    </div>
+
+    <div class="hero-ship-wrap">
+      <img src="assets/ship_skin_aurora.png" class="hero-ship" alt="Voidstrike player ship" />
+      <div class="hero-exhaust"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2 class="section-title">Built for the Fight</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Skill Tree Mastery</h3>
+          <p>34 unlockable nodes across damage, defence, speed, and support branches. Every run builds your legend.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌌</div>
+          <h3>Multi-Planet Campaign</h3>
+          <p>Fight through alien worlds — each planet has unique enemy formations, minibosses, and a titan guardian.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>4 Pilot Skins</h3>
+          <p>Aurora, Phantom, Inferno, Gilded. Each ship has a distinct look to match your playstyle.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💥</div>
+          <h3>Epic Boss Encounters</h3>
+          <p>Over 16 distinct boss classes with unique attack patterns. Boss fights that actually require strategy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Powerup Arsenal</h3>
+          <p>Multishot, damage boost, magnet, rapid fire, and more. Chain powerups for devastating combos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Combo Streak System</h3>
+          <p>Build kill streaks to trigger Overdrive mode. Gold flashes, enhanced fire rate, maximum carnage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHIPS -->
+  <section class="section ships" id="ships">
+    <div class="container">
+      <h2 class="section-title">Choose Your Pilot</h2>
+      <p class="section-sub">Four ships. One void. Make it yours.</p>
+      <div class="ships-grid">
+        <div class="ship-card">
+          <img src="assets/ship_skin_aurora.png" alt="Aurora" class="ship-sprite" />
+          <h4>Aurora</h4>
+          <p>Balanced fighter. Precision-tuned for adaptability across all sectors.</p>
+        </div>
+        <div class="ship-card">
+          <img src="assets/ship_skin_phantom.png" alt="Phantom" class="ship-sprite" />
+          <h4>Phantom</h4>
+          <p>Stealth-class interceptor. Built for pilots who strike from the shadows.</p>
+        </div>
+        <div class="ship-card">
+          <img src="assets/ship_skin_inferno.png" alt="Inferno" class="ship-sprite" />
+          <h4>Inferno</h4>
+          <p>Heavy assault frame. Shreds enemy formations with overwhelming firepower.</p>
+        </div>
+        <div class="ship-card">
+          <img src="assets/ship_skin_gilded.png" alt="Gilded" class="ship-sprite" />
+          <h4>Gilded</h4>
+          <p>Elite command vessel. Reserved for pilots who've conquered the void.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWERUPS -->
+  <section class="section powerups" id="powerups">
+    <div class="container">
+      <h2 class="section-title">Powerup System</h2>
+      <p class="section-sub">Drop rates scale with threat level. Elite kills reward elite gear.</p>
+      <div class="powerups-row">
+        <div class="powerup-item">
+          <img src="assets/icon_damage_boost.png" alt="Damage Boost" />
+          <span>Damage Boost</span>
+        </div>
+        <div class="powerup-item">
+          <img src="assets/icon_multishot.png" alt="Multishot" />
+          <span>Multishot</span>
+        </div>
+        <div class="powerup-item">
+          <img src="assets/icon_rapid_fire.png" alt="Rapid Fire" />
+          <span>Rapid Fire</span>
+        </div>
+        <div class="powerup-item">
+          <img src="assets/icon_speed_boost.png" alt="Speed Boost" />
+          <span>Speed Boost</span>
+        </div>
+        <div class="powerup-item">
+          <img src="assets/icon_invincibility.png" alt="Invincibility" />
+          <span>Invincibility</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOSSES TEASER -->
+  <section class="section bosses-section">
+    <div class="container">
+      <h2 class="section-title">Face the Titans</h2>
+      <p class="section-sub">16+ boss classes guard the sector boundaries. Each one has a plan. So should you.</p>
+      <div class="bosses-row">
+        <img src="assets/boss_01_f0.png" alt="Boss 01" class="boss-preview" />
+        <img src="assets/boss_02_f0.png" alt="Boss 02" class="boss-preview" />
+        <img src="assets/boss_03_f0.png" alt="Boss 03" class="boss-preview" />
+        <div class="boss-preview boss-more">+13 more</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="section cta-section" id="download">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-glow"></div>
+        <h2>Ready to Strike?</h2>
+        <p>Download Voidstrike free on the App Store. No subscriptions. No paywalls on the core game.</p>
+        <span class="btn btn-primary btn-large btn-disabled" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Coming Soon to the App Store
+        </span>
+        <p class="cta-note">Free to play · No account needed · iOS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo footer-logo">VOIDSTRIKE</span>
+        <nav class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:nico.frei@etik.com?subject=Data%20Deletion%20Request">Delete My Data</a>
+          <a href="mailto:nico.frei@etik.com">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Voidstrike. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="stars.js"></script>
+</body>
+</html>
