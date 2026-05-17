@@ -546,6 +546,183 @@ canvas#stars {
   100% { opacity: 0.9; transform: scaleX(1); }
 }
 
+/* ─── Briefing ───────────────────────────────── */
+.briefing-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.briefing-body {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.briefing-body p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.permission-denied {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #5bc8f5;
+  background: rgba(91,200,245,0.06);
+  border: 1px solid rgba(91,200,245,0.2);
+  border-left: 3px solid #5bc8f5;
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+.briefing-footer {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Transmissions ──────────────────────────── */
+.transmissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.transmission {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid rgba(168,85,247,0.5);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 22px;
+}
+
+.tx-label {
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--accent2);
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.transmission p {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #a0b0c8;
+  line-height: 1.7;
+}
+
+/* ─── Agent Files ────────────────────────────── */
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.agent-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.agent-card:hover {
+  border-color: rgba(168,85,247,0.4);
+  transform: translateY(-2px);
+}
+
+.agent-classified { border-color: rgba(255,80,80,0.15); }
+.agent-classified:hover { border-color: rgba(255,80,80,0.4); }
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.agent-sprite {
+  image-rendering: pixelated;
+  width: 56px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));
+}
+
+.agent-sprite-redacted {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  background: rgba(255,80,80,0.08);
+  border: 1px solid rgba(255,80,80,0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255,80,80,0.4);
+}
+
+.agent-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.agent-class {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.class-iv  { background: rgba(91,200,245,0.12);  color: #5bc8f5; }
+.class-v   { background: rgba(91,200,245,0.12);  color: #5bc8f5; }
+.class-ix  { background: rgba(255,60,60,0.12);   color: #ff5050; }
+.class-x   { background: rgba(168,85,247,0.15);  color: #a855f7; }
+
+.agent-field {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+}
+
+.agent-field span {
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(136,147,168,0.45);
+  min-width: 56px;
+  flex-shrink: 0;
+}
+
+.agent-memo {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  font-style: italic;
+  color: rgba(168,85,247,0.7);
+  line-height: 1.6;
+}
+
+.agent-classified .agent-memo { color: rgba(255,80,80,0.55); }
+
 /* ─── Responsive ─────────────────────────────── */
 @media (max-width: 600px) {
   .hero-actions { flex-direction: column; align-items: center; }
