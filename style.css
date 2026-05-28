@@ -181,7 +181,7 @@ canvas#stars {
 
 .planet {
   position: absolute;
-  image-rendering: pixelated;
+  image-rendering: auto;
   opacity: 0.6;
   filter: blur(0.5px);
 }
